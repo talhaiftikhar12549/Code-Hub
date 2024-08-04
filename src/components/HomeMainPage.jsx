@@ -1,6 +1,6 @@
 import React from "react"
-import homeMainPage from "../assets/HomeMainPage.svg"
-import HomeMainPage2 from "../assets/14230944_5437681.svg"
+import homeMainPage from "../assets/groupStudy.svg"
+import HomeMainPage2 from "../assets/boyStudy.svg"
 import CardSlider from "./CardSlider"
 import {useSelector, useDispatch} from 'react-redux'
 import {decrement, increment} from '../redux/slice/counterslice'
