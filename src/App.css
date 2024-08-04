@@ -3,10 +3,10 @@
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
 .animate-slide-left {
-    animation: slide-left 20s linear infinite;
+    animation: slide-left 100s linear infinite;
 }

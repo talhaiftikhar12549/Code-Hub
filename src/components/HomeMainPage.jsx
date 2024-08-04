@@ -29,9 +29,11 @@ return (
                 </div>
             </div>
         </div>
+        {/*Card Slider Start*/}
         <div className="border-b-4 h-[90vh] flex items-center justify-center">
             <CardSlider/>
         </div>
+        {/*Card Slider End*/}
         <div className="flex border-b-4">
             <div className="w-[50%] flex items-center justify-center text-center">
 
