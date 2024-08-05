@@ -12,7 +12,6 @@ const CardSlider = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_491000e07b3fbeecd7423939dd410845c437d&q=Computer Science');
-
                 setAbc(response.data.results);
                 dispatch(apiData(response.data.results));
             } catch (e) {

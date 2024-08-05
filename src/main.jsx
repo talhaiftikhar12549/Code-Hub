@@ -1,5 +1,4 @@
 import React, {Suspense} from 'react'
-import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactDOM from 'react-dom/client'
 import './index.css'

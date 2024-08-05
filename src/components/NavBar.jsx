@@ -8,7 +8,10 @@ export default function NavBar() {
             <div className=" shadow  ">
                 <ul className="list-none flex justify-around text-lg h-[4rem]">
                     <li className="content-center">
+                        <NavLink
+                        to={"/"}>
                         <p className="text-4xl font-black text-[#FFC727] font-serif content-center">Code Hub</p>
+                        </NavLink>
                     </li>
                     <li className="content-center ">
                         <NavLink
@@ -24,7 +27,7 @@ export default function NavBar() {
                             to="/roadmap"
                             className={({isActive}) => (isActive ? 'text-[#FFC727] font-bold' : 'text-gray-700 font-bold')}
                         >
-                            RoadMap
+                            Road Map
                         </NavLink>
                     </li>
                     <li className="content-center ">
