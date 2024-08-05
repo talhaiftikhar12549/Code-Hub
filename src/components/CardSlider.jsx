@@ -89,7 +89,7 @@ const CardSlider = () => {
         <div className="relative overflow-hidden w-full h-64">
             <div className="absolute top-0 left-0 h-full flex card-slider">
                 {abc.map((card, index) => (
-                    <div key={index} className="flex-shrink-0 w-64 h-full bg-blue-500 m-2 rounded shadow-lg">
+                    <div onClick={()=>{window.open(card.link)}} key={index} className="flex-shrink-0 w-64 h-full bg-blue-500 m-2 rounded shadow-lg">
                         <img
                             src={card.image_url || 'https://via.placeholder.com/150'}
                             alt={card.title || 'Card Image'}
