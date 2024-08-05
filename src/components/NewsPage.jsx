@@ -14,11 +14,11 @@ console.log("Data IN news page",latestNews)
         <>
             <div>
                 <div className="flex flex-col items-center pt-8">
-                    <p className="text-3xl py-2">Our Top Menu</p>
-                    <p className="text-xl">Click on any item below to add it to your cart</p>
+                    <p className="text-3xl py-2">Keep in touch with emerging tech trends.</p>
+                    <p className="text-xl">Stay connected to the industry's latest news and insights on technological progress.</p>
                     <button
                         onClick={handleViewMoreClick}
-                        className="py-[10px] px-[30px] border-[2px] border-[#FFE393] text-[#ffe393] shadow-lg font-medium my-8 active:bg-[#98c3ed] active:font-medium active:shadow-lg active:text-[#ffffff]"
+                        className="py-[10px] px-[30px] border-[2px] border-[#FFC727] text-[#FFC727] shadow-lg font-medium my-8 active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"
                     >
                         View More
                     </button>
@@ -27,19 +27,16 @@ console.log("Data IN news page",latestNews)
                     <div className="container mx-auto px-4 py-8">
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                             {latestNews.map((news) => (
-                                <div key={news.article_id} className="border rounded-lg p-4 shadow-lg bg-[#ffe393]">
-                                    <img src={news.image_url} alt={`${news.name}`} />
+                                <div key={news.article_id} className="border-[#FFC727] border rounded-lg p-4 shadow-lg bg-[#ffffff]">
+                                    <img height={300}  width={450} src={news.image_url || "https://placehold.co/450x300"} alt={`${news.name}`} />
                                     <h3 className="text-xl font-semibold mb-2">{news.title}</h3>
                                     <p className="text-gray-700 mb-2">{news.description}</p>
-                                    <p className="text-gray-900 font-bold">${news.language}</p>
+                                    <p className="text-gray-900 font-bold">{news.country[0]}</p>
                                     <button
-                                        // onClick={() => {
-                                        //     dispatch(addtocart({ id: food.id, name: food.name, desc: food.description, price: food.price }));
-                                        // }}
                                         onClick={()=>{window.open(news.link)}}
-                                        className="mt-4 py-2 px-4 bg-[##ffe393] text-white cursor-pointer rounded-lg hover:bg-blue-600 active:bg-[#98c3ed]"
+                                        className="border-[2px] text-[#FFC727] border-[#FFC727] mt-4 py-2 px-4 cursor-pointer rounded-lg active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"
                                     >
-                                        Add to Cart
+                                        Learn More
                                     </button>
                                 </div>
                             ))}

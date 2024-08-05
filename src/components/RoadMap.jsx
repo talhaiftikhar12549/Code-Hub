@@ -26,7 +26,7 @@ export default function RoadMap() {
                             <button onClick={() => {
                                 window.open("https://www.harvardonline.harvard.edu/course/cs50-introduction-computer-science")
                             }}
-                                    className={"my-6 py-2 px-6 rounded-xl cursor-pointer border text-xl bg-[#FFC727] text-white font-bold"}>Enroll
+                                    className={"my-6 py-2 px-6 rounded-xl cursor-pointer border text-xl bg-[#FFC727] text-white font-bold active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"}>Enroll
                                 Now
                             </button>
                         </div>
@@ -48,7 +48,7 @@ export default function RoadMap() {
                             <button onClick={() => {
                                 window.open("https://www.coursera.org/professional-certificates/meta-front-end-developer")
                             }}
-                                    className={"my-6 py-2 px-6 rounded-xl cursor-pointer border text-xl bg-[#FFC727] text-white font-bold"}>Enroll
+                                    className={"my-6 py-2 px-6 rounded-xl cursor-pointer border text-xl bg-[#FFC727] text-white font-bold active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"}>Enroll
                                 Now
                             </button>
                         </div>
@@ -79,7 +79,7 @@ export default function RoadMap() {
                             <button onClick={() => {
                                 window.open("https://www.coursera.org/professional-certificates/meta-back-end-developer")
                             }}
-                                    className={"my-6 py-2 px-6 rounded-xl cursor-pointer border text-xl bg-[#FFC727] text-white font-bold"}>Enroll
+                                    className={"my-6 py-2 px-6 rounded-xl cursor-pointer border text-xl bg-[#FFC727] text-white font-bold active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"}>Enroll
                                 Now
                             </button>
                         </div>
