@@ -28,7 +28,7 @@ console.log("Data IN news page",latestNews)
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                             {latestNews.map((news) => (
                                 <div key={news.article_id} className="border-[#FFC727] border rounded-lg p-4 shadow-lg bg-[#ffffff]">
-                                    <img height={300}  width={450} src={news.image_url || "https://placehold.co/450x300"} alt={`${news.name}`} />
+                                    <img className={"max-h-[300px] max-w-[450px] bg-no-repeat bg-center"} height={300}  width={450} src={news.image_url || "https://placehold.co/450x300"} alt={`${news.name}`} />
                                     <h3 className="text-xl font-semibold mb-2">{news.title}</h3>
                                     <p className="text-gray-700 mb-2">{news.description}</p>
                                     <p className="text-gray-900 font-bold">{news.country[0]}</p>

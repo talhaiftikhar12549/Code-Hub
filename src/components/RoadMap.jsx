@@ -1,9 +1,10 @@
 import React from "react"
 import homeMainPage from "../assets/groupStudy.svg";
-import img1 from "../assets/girlJs.svg"
+import img3 from "../assets/girlJs.svg"
 import img2 from "../assets/girlPhp.svg"
-import img3 from "../assets/girlPopUp.svg"
+import img1 from "../assets/girlPopUp.svg"
 import img4 from "../assets/BoyBag.svg"
+import img5 from "../assets/boySync.svg"
 
 export default function RoadMap() {
     return (
@@ -64,7 +65,7 @@ export default function RoadMap() {
 
 
             {/*Back End Software Engineering Start*/}
-            <div className="flex ">
+            <div className="flex border-b-4">
                 <div className="w-[45%] h-[90vh] flex items-center justify-center">
                     <div>
                         <img src={img2} className="h-[400px] w-[400px]"/>
@@ -87,6 +88,56 @@ export default function RoadMap() {
                 </div>
             </div>
             {/*Back End Software Engineering End*/}
+            {/* Python Developer Start*/}
+            <div className="flex border-b-4">
+
+                <div className="w-[55%] flex items-center justify-center text-center">
+
+                    <div><p className="text-4xl font-black text-[#FFC727] font-serif ">Learn Python 3</p>
+                        <div className="p-4 px-16">
+                            <p className="text-xl font-[400]">Python is a general-purpose, versatile, and powerful
+                                programming language. It’s a great first language because Python code is concise and
+                                easy to read</p>
+                            <button onClick={() => {
+                                window.open("https://www.codecademy.com/catalog/language/python")
+                            }}
+                                    className={"my-6 py-2 px-6 rounded-xl cursor-pointer border text-xl bg-[#FFC727] text-white font-bold active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"}>Enroll
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-[45%] h-[90vh] flex items-center justify-center">
+                    <div>
+                        <img src={img5} className="h-[400px] w-[400px]"/>
+                    </div>
+                </div>
+            </div>
+            {/* Python Developer Ends*/}
+            {/* Data Science Start   */}
+            <div className="flex ">
+                <div className="w-[45%] h-[90vh] flex items-center justify-center">
+                    <div>
+                        <img src={img1} className="h-[400px] w-[400px]"/>
+                    </div>
+                </div>
+                <div className="w-[55%] flex items-center justify-center text-center">
+
+                    <div><p className="text-4xl font-black text-[#FFC727] font-serif ">Google Data Analytics </p>
+                        <div className="p-4 px-16">
+                            <p className="text-xl font-[400]">Get on the fast track to a career in Data Analytics. In this certificate program, you'll learn in-demand skills at your own pace.</p>
+                            <button onClick={() => {
+                                window.open("https://www.coursera.org/professional-certificates/google-data-analytics")
+                            }}
+                                    className={"my-6 py-2 px-6 rounded-xl cursor-pointer border text-xl bg-[#FFC727] text-white font-bold active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"}>Enroll
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/*  Data Science Ends  */}
+
 
         </>
     )
