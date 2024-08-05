@@ -33,7 +33,7 @@ return (
         <div className="border-b-4 h-[100%] flex items-center justify-center">
             <CardSlider/>
         </div>
-        <div className="flex border-b-4">
+        <div className="flex ">
             <div className="w-[50%] flex items-center justify-center text-center">
 
                 <div><p className="text-4xl font-black text-[#FFC727] font-serif ">Code Hub</p>
