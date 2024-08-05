@@ -30,7 +30,12 @@ console.log("Data IN news page",latestNews)
                                 <div key={news.article_id} className="border-[#FFC727] border rounded-lg p-4 shadow-lg bg-[#ffffff]">
                                     <img className={"max-h-[300px] max-w-[450px] bg-no-repeat bg-center"} height={300}  width={450} src={news.image_url || "https://placehold.co/450x300"} alt={`${news.name}`} />
                                     <h3 className="text-xl font-semibold mb-2">{news.title}</h3>
-                                    <p className="text-gray-700 mb-2">{news.description}</p>
+                                    <p className="text-gray-700 mb-2">
+                                        {news.description.split(' ').length > 50
+                                            ? news.description.split(' ').slice(0,  50).join(' ') + '...'
+                                            : news.description
+                                        }
+                                    </p>
                                     <p className="text-gray-900 font-bold">{news.country[0]}</p>
                                     <button
                                         onClick={()=>{window.open(news.link)}}
