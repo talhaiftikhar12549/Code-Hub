@@ -2,6 +2,7 @@ import React from "react"
 import homeMainPage from "../assets/groupStudy.svg"
 import HomeMainPage2 from "../assets/boyStudy.svg"
 import CardSlider from "./CardSlider"
+import {NavLink} from "react-router-dom";
 import {useSelector, useDispatch} from 'react-redux'
 import {decrement, increment} from '../redux/slice/counterslice'
 
