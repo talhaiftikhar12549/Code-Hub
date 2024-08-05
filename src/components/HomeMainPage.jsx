@@ -2,6 +2,7 @@ import React from "react"
 import homeMainPage from "../assets/groupStudy.svg"
 import HomeMainPage2 from "../assets/boyStudy.svg"
 import CardSlider from "./CardSlider"
+import {NavLink} from "react-router-dom";
 import {useSelector, useDispatch} from 'react-redux'
 import {decrement, increment} from '../redux/slice/counterslice'
 
@@ -29,12 +30,10 @@ return (
                 </div>
             </div>
         </div>
-        {/*Card Slider Start*/}
-        <div className="border-b-4 h-[90vh] flex items-center justify-center">
+        <div className="border-b-4 h-[100%] flex items-center justify-center">
             <CardSlider/>
         </div>
-        {/*Card Slider End*/}
-        <div className="flex border-b-4">
+        <div className="flex ">
             <div className="w-[50%] flex items-center justify-center text-center">
 
                 <div><p className="text-4xl font-black text-[#FFC727] font-serif ">Code Hub</p>

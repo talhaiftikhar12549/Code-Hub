@@ -1,12 +1,13 @@
 @keyframes slide-left {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
-.animate-slide-left {
-    animation: slide-left 100s linear infinite;
+.card-slider {
+    display: flex;
+    animation: slide-left 110s linear infinite;
+}
+
+.card-slider:hover {
+    animation-play-state: paused;
 }
