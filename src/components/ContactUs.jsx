@@ -4,7 +4,10 @@ export default function ContactUs ()
 {
     return(
         <>
-            i am ContactUs
+            <div>
+                i am ContactUs
+            </div>
+
         </>
     )
 }

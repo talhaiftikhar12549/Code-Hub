@@ -1,15 +1,16 @@
-import React ,{ Suspense } from 'react'
+import React, {Suspense} from 'react'
 import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { store } from './redux/store/store'
-import { Provider } from 'react-redux'
+import {store} from './redux/store/store'
+import {Provider} from 'react-redux'
 import Layout from "./components/LayOut.jsx";
 import HomeMainPage from "./components/HomeMainPage.jsx";
 import RoadMap from "./components/RoadMap.jsx";
 import NewsPage from "./components/NewsPage.jsx";
 import ContactUs from "./components/ContactUs.jsx";
+
 const router = createBrowserRouter(
     [
         {
@@ -22,47 +23,22 @@ const router = createBrowserRouter(
                 },
                 {
                     path: "roadmap",
-                    element: ( <Suspense fallback={<div>Loading...</div>}>
+                    element: (<Suspense fallback={<div>Loading...</div>}>
                         <RoadMap/>
-                    </Suspense> )
+                    </Suspense>)
                 },
                 {
                     path: "newsPage",
-                    element: ( <Suspense fallback={<div>Loading...</div>}>
+                    element: (<Suspense fallback={<div>Loading...</div>}>
                         <NewsPage/>
-                    </Suspense> )
+                    </Suspense>)
                 },
                 {
                     path: "contactUs",
-                    element: ( <Suspense fallback={<div>Loading...</div>}>
+                    element: (<Suspense fallback={<div>Loading...</div>}>
                         <ContactUs/>
-                    </Suspense> )
+                    </Suspense>)
                 },
-                // {
-                //     path: "menu",
-                //     element: ( <Suspense fallback={<div>Loading...</div>}>
-                //         <Menu/>
-                //     </Suspense> )
-                // },
-                // {
-                //     path: "Cart",
-                //     element: ( <Suspense fallback={<div>Loading...</div>}>
-                //         <Cart/>
-                //     </Suspense> )
-                // },
-                // {
-                //     path: "aboutus",
-                //     element:( <Suspense fallback={<div>Loading...</div>}>
-                //         <Aboutus/>
-                //     </Suspense> )
-                //
-                // },
-                // {
-                //     path: "adminLogin",
-                //     element: ( <Suspense fallback={<div>Loading...</div>}>
-                //         <AdminLogin/>
-                //     </Suspense> )
-                // }
             ]
         }
     ])

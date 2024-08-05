@@ -4,7 +4,10 @@ export default function NewsPage ()
 {
     return(
         <>
-            i am News page
+            <div>
+                i am News page
+            </div>
+
         </>
     )
 }

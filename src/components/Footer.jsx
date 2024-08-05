@@ -4,7 +4,10 @@ export default function Footer()
 {
     return (
         <>
-        i am footer
+            <div>
+                i am footer
+            </div>
+
         </>
     )
 }

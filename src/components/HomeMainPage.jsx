@@ -30,7 +30,7 @@ return (
                 </div>
             </div>
         </div>
-        <div className="border-b-4 h-[90vh] flex items-center justify-center">
+        <div className="border-b-4 h-[100%] flex items-center justify-center">
             <CardSlider/>
         </div>
         <div className="flex border-b-4">
