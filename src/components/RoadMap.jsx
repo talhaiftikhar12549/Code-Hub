@@ -125,7 +125,8 @@ export default function RoadMap() {
 
                     <div><p className="text-4xl font-black text-[#FFC727] font-serif ">Google Data Analytics </p>
                         <div className="p-4 px-16">
-                            <p className="text-xl font-[400]">Get on the fast track to a career in Data Analytics. In this certificate program, you'll learn in-demand skills at your own pace.</p>
+                            <p className="text-xl font-[400]">Get on the fast track to a career in Data Analytics. In
+                                this certificate program, you'll learn in-demand skills at your own pace.</p>
                             <button onClick={() => {
                                 window.open("https://www.coursera.org/professional-certificates/google-data-analytics")
                             }}
