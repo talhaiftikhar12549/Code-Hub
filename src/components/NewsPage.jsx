@@ -28,17 +28,21 @@ console.log("Data IN news page",latestNews)
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                             {latestNews.map((news) => (
                                 <div key={news.article_id} className="border-[#FFC727] border rounded-lg p-4 shadow-lg bg-[#ffffff]">
-                                    <img className={"max-h-[300px] max-w-[450px] bg-no-repeat bg-center"} height={300}  width={450} src={news.image_url || "https://placehold.co/450x300"} alt={`${news.name}`} />
+                                    <img
+                                        className="w-full min-h-[300px] object-cover max-h-[300px] rounded-lg"
+                                        src={news.image_url || "https://placehold.co/450x300"}
+                                        alt={`${news.name}`}
+                                    />
                                     <h3 className="text-xl font-semibold mb-2">{news.title}</h3>
                                     <p className="text-gray-700 mb-2">
-                                        {news.description.split(' ').length > 50
-                                            ? news.description.split(' ').slice(0,  50).join(' ') + '...'
-                                            : news.description
-                                        }
+                                        {(() => {
+                                            const words = news.description ? news.description.split(' ') : [];
+                                            return words.length > 50 ? words.slice(0, 50).join(' ') + ' .....' : news.description;
+                                        })()}
                                     </p>
                                     <p className="text-gray-900 font-bold">{news.country[0]}</p>
                                     <button
-                                        onClick={()=>{window.open(news.link)}}
+                                        onClick={() => { window.open(news.link) }}
                                         className="border-[2px] text-[#FFC727] border-[#FFC727] mt-4 py-2 px-4 cursor-pointer rounded-lg active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"
                                     >
                                         Learn More
@@ -46,6 +50,7 @@ console.log("Data IN news page",latestNews)
                                 </div>
                             ))}
                         </div>
+
                     </div>
                 </div>
             </div>
