@@ -15,8 +15,7 @@ export default function NewsPage() {
             <div>
                 <div className="flex flex-col items-center pt-8">
                     <p className="text-3xl py-2">Keep in touch with emerging tech trends.</p>
-                    <p className="text-xl">Stay connected to the industry's latest news and insights on technological
-                        progress.</p>
+                    <p className="text-xl">Stay connected to the industry latest news and insights on technological progress.</p>
                     <button
                         onClick={handleViewMoreClick}
                         className="py-[10px] px-[30px] border-[2px] border-[#FFC727] text-[#FFC727] shadow-lg font-medium my-8 active:bg-[#FFC727] active:font-medium active:shadow-lg active:text-white"
