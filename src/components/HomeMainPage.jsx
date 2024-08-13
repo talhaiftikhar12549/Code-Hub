@@ -1,14 +1,11 @@
-import React from "react"
 import HomeMainPage2 from "../assets/groupStudy.svg"
 import homeMainPage from "../assets/boyStudy.svg"
 import CardSlider from "./CardSlider"
-import {NavLink} from "react-router-dom";
-import {useSelector, useDispatch} from 'react-redux'
-import {decrement, increment} from '../redux/slice/counterslice'
+import {useSelector} from 'react-redux'
 
 export default function HomeMainPage(){
 const count = useSelector((state) => state.counter.value)
-const dispatch = useDispatch()
+
 
 return (
     <>

@@ -1,25 +1,9 @@
-import React, {useEffect, useState} from 'react';
 import '../App.css';
-import axios from 'axios';
-import {useSelector, useDispatch} from 'react-redux';
-import {apiData} from '../redux/slice/counterslice.js';
+import {useSelector} from 'react-redux';
 
 const CardSlider = () => {
     const abc = useSelector((state) => state.counter.APIData)
 
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const response = await axios.get('https://newsdata.io/api/1/news?apikey=pub_491000e07b3fbeecd7423939dd410845c437d&q=Computer Science');
-    //             setAbc(response.data.results);
-    //             dispatch(apiData(response.data.results));
-    //         } catch (e) {
-    //             console.error('API Not Working', e);
-    //         }
-    //     };
-    //
-    //     fetchData();
-    // }, [dispatch]);
 
     return (
         <div className="relative overflow-hidden w-full h-64 my-24">

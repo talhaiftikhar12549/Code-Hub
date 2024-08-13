@@ -1,5 +1,3 @@
-import React from "react"
-import homeMainPage from "../assets/groupStudy.svg";
 import img3 from "../assets/girlJs.svg"
 import img2 from "../assets/girlPhp.svg"
 import img1 from "../assets/girlPopUp.svg"
